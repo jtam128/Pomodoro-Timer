@@ -1,0 +1,7 @@
+.vscode
+.vercel
+.attachignore
+.qualified-attach.json 
+test
+docs
+node_modules
