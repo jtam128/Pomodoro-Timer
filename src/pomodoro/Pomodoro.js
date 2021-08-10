@@ -4,7 +4,7 @@ import useInterval from "../utils/useInterval";
 import { minutesToDuration, secondsToDuration } from "../utils/duration";
 
 // These functions are defined outside of the component to insure they do not have access to state
-// and are, therefore more likely to be pure.
+
 
 /**
  * Update the session state with new state after each tick of the interval.
@@ -51,16 +51,13 @@ function nextSession(focusDuration, breakDuration) {
 
 function Pomodoro() {
 
-  // Timer starts out paused
   const [isTimerRunning, setIsTimerRunning] = useState(false);
-  // The current session - null where there is no session running
   const [session, setSession] = useState(null);
 
   const [focusDuration, setFocusDuration] = useState(25);
   const [breakDuration, setBreakDuration] = useState(5);
   // var..
   const handleFocusMinus = () => {
-
     setFocusDuration(Math.max(5, focusDuration - 5));
   };
 
@@ -78,16 +75,14 @@ function Pomodoro() {
   const handleStopClick = () => {
 
     setFocusDuration(25);
-    setBreakDuration(5);
+    setBreakDuration();
     setSession(null);
     setIsTimerRunning();
   };
 
   /**
-   * Custom hook that invokes the callback function every second
-   *
-   * NOTE: You will not need to make changes to the callback function
-   */
+   * Custom hook that invokes the callback function every second *
+   **/
   useInterval(() => {
     if (session.timeRemaining === 0)
     {
@@ -136,6 +131,7 @@ function Pomodoro() {
             <div className="input-group-append">
               <button
                 onClick={handleFocusMinus}
+                disabled={isTimerRunning}
                 type="button"
                 className="btn btn-secondary"
                 data-testid="decrease-focus"
@@ -145,6 +141,7 @@ function Pomodoro() {
 
               <button
                 onClick={handleFocusPlus}
+                disabled={isTimerRunning}
                 type="button"
                 className="btn btn-secondary"
                 data-testid="increase-focus"
@@ -165,7 +162,7 @@ function Pomodoro() {
 
                 <button
                   onClick={handleBreakMinus}
-                  disable={!isTimerRunning}
+                  disabled={isTimerRunning}
                   type="button"
                   className="btn btn-secondary"
                   data-testid="decrease-break"
@@ -174,6 +171,7 @@ function Pomodoro() {
                 </button>
                 <button
                   onClick={handleBreakPlus}
+                  disabled={isTimerRunning}
                   type="button"
                   className="btn btn-secondary"
                   data-testid="increase-break"
@@ -220,32 +218,44 @@ function Pomodoro() {
           </div>
         </div>
       </div>
+
       <div>
-        {/* if(setSession === "true") */}
-        <div className="row mb-2">
-          <div className="col">
-            <h2 data-testid="session-title">
-              {/* {session?.label} for 25:00 minutes */}
-              {session?.label} for {minutesToDuration(focusDuration)} minutes
-            </h2>
-            <p className="lead" data-testid="session-sub-title">
-              {session?.timeRemaining} remaining
-            </p>
-          </div>
-        </div>
-        <div className="row mb-2">
-          <div className="col">
-            <div className="progress" style={{ height: "20px" }}>
-              <div
-                className="progress-bar"
-                role="progressbar"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              />
+
+
+        {isTimerRunning ? (
+          <>
+            <div className="row mb-2">
+              <div className="col">
+                <h2 data-testid="session-title">
+                  {(session.label === "Focusing")
+                    ? session?.label + " for " + minutesToDuration(focusDuration) + " minutes "
+                    : session?.label + " for " + minutesToDuration(breakDuration) + " minutes "
+                  }</h2>
+
+                <p className="lead" data-testid="session-sub-title">
+                  {secondsToDuration(session?.timeRemaining)} remaining
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
+
+            <div className="row mb-2">
+              <div className="col">
+                <div className="progress" style={{ height: "20px" }}>
+                  <div
+                    className="progress-bar"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="0"
+                    style={{ width: "0%" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </>
+        ) : null}
       </div>
+
     </div>
   );
 }
