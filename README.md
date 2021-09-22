@@ -4,3 +4,4 @@ The Pomodoro technique is a time-management method developed by Francesco Cirill
 This app uses React State and rendering and has interactive components that allow the user to change and set up focus and break intervals. Audio plays when the focus timer and break timer expires, respectively. All states are updated using callbacks to avoid race conditions. Each component has a single responsibility.
 
 ## Link
+Live Demo(https://pomodoro-project-qsty4az65-jessicatam128-gmailcom.vercel.app/)
