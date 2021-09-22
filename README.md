@@ -8,3 +8,9 @@ This app uses React State and rendering and has interactive components that allo
 
 ## Initial Screen
 ![Alt text](I:/net/jesEngflex/pomodorotimerproj/initialscreen.jpg?raw=true)
+
+
+
+## Technology
+Built with: React, NPM, Bootstrap, JavaScript
+
