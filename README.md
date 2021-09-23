@@ -7,8 +7,9 @@ This app uses React State and rendering and has interactive components that allo
 [Live Demo](https://pomodoro-project-qsty4az65-jessicatam128-gmailcom.vercel.app/)
 
 ## Initial Screen
-![Alt text](I:/net/jesEngflex/pomodorotimerproj/initialscreen.jpg?raw=true)
+![Alt text](./initialscreen.jpg?raw=true)
 
+![initialscreen](https://user-images.githubusercontent.com/74563848/134547187-63db760b-7f8a-4f5e-b9ad-a2c1b198fe53.jpg)
 
 
 ## Technology
