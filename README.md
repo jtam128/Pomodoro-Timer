@@ -12,7 +12,7 @@ This app uses React State and rendering and has interactive components that allo
 ## Initial Screen
 ![Alt text](./img/initialscreen.jpg?raw=true)
 
-## Initial Screen 1
+## Initial Screen 1a
 ![Alt text](./img/initialscreen.jpg?raw=true)
 
 
