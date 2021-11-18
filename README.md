@@ -7,23 +7,7 @@ This app uses React State and rendering and has interactive components that allo
 [Live Demo](https://pomodoro-project-qsty4az65-jessicatam128-gmailcom.vercel.app/)
 
 ## Initial Screen
-<<<<<<< HEAD
 ![Alt text](./img/initialscreen.jpg?raw=true)
-
-## Initial Screen
-![Alt text](./img/initialscreen.jpg?raw=true)
-
-## Initial Screen 1a
-![Alt text](./img/initialscreen.jpg?raw=true)
-
-
-
-
-## Technology
-Built with: 
-- React, NPM, Bootstrap, JavaScript
-=======
-![initialscreen](https://user-images.githubusercontent.com/74563848/134547187-63db760b-7f8a-4f5e-b9ad-a2c1b198fe53.jpg)
 
 ## Focus Screen
 ![focusscreen](https://user-images.githubusercontent.com/74563848/134547304-c6c7aac1-3679-4b18-b218-1e95477fa024.jpg)
