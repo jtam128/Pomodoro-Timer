@@ -19,6 +19,10 @@ This app uses React State and rendering and has interactive components that allo
 ![pausescreen](https://user-images.githubusercontent.com/74563848/134547400-0331b125-feff-4486-886d-8468f61b8d70.jpg)
 
 ## Technology
-Built with: React, NPM, Bootstrap, JavaScript
+Built with: 
+* React
+* NPM
+* Bootstrap
+* JavaScript
 
 >>>>>>> b90648deb7f56edf9705f16b406f272ffb0f5683
