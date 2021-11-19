@@ -25,4 +25,7 @@ Built with:
 * Bootstrap
 * JavaScript
 
+# Future Goals
+Apply more CSS to make it visually appealing.
+
 >>>>>>> b90648deb7f56edf9705f16b406f272ffb0f5683
