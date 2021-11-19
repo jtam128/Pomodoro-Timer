@@ -17,7 +17,7 @@ This app uses React State and rendering and has interactive components that allo
 ## Pause Screen
 ![pausescreen](https://user-images.githubusercontent.com/74563848/134547400-0331b125-feff-4486-886d-8468f61b8d70.jpg)
 
-## Technology
+## Technology & Tools
 Built with: 
 * React
 * NPM
