@@ -5,7 +5,7 @@ The Pomodoro Technique is a time-management method developed by Francesco Cirill
 
 This application allows the user to change and set up focus and break intervals. Audio plays when the focus timer and break timer expires, respectively. All states are updated using callbacks to avoid race conditions. Each component has a single responsibility.
 
-[Live Link](https://pomodoro-project-qsty4az65-jessicatam128-gmailcom.vercel.app/)
+[Live Link](https://pomodoro-project-rosy.vercel.app/)
 
 ## Technology & Tools
 Built with: 
