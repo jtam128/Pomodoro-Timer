@@ -177,7 +177,7 @@ function Pomodoro() {
         breakDuration={breakDuration}
         isTimerRunning={isTimerRunning}
       />
-    </div >
+    </div>
   );
 }
 

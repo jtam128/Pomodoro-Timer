@@ -11,7 +11,7 @@ function PlayPauseStop({ playPause, handleStopClick, isTimerRunning }) {
 
       <button
         type="button"
-        className="btn btn-primary"
+        className="btn btn-dark"
         data-testid="play-pause"
         title="Start or pause timer"
         onClick={playPause}

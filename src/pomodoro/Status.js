@@ -8,7 +8,7 @@ function Status({ session, focusDuration, breakDuration, isTimerRunning }) {
         session ? (
           <React.Fragment>
 
-            < div className="row mb-2">
+            <div className="row mb-2">
               <div className="col">
                 <h2 data-testid="session-title">
                   {(session.label === "Focusing")
@@ -46,6 +46,7 @@ function Status({ session, focusDuration, breakDuration, isTimerRunning }) {
                           ? focusDuration * 60
                           : breakDuration * 60)
                         }%`,
+                      backgroundColor: "black"
                     }}
 
 
